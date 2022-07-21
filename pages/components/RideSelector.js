@@ -24,11 +24,11 @@ const RideSelector = () => {
 export default RideSelector;
 
 const Wrapper = tw.div`
-flex flex-1 w-full
+flex flex-1 flex-col
 `;
 
 const Title = tw.div`
-text-gray-500 text-sm py-2 border-b text-center
+text-gray-500 text-sm py-2 border-b text-center w-full
 `;
 
 const CarList = tw.div``;
@@ -38,15 +38,19 @@ flex p-4 items-center
 `;
 
 const CarImage = tw.img`
-h-14
+h-14 mr-2
 `;
 
 const CarDetails = tw.div`
 flex-1
 `;
 
-const Service = tw.div``;
+const Service = tw.div`
+font-medium 
+`;
 
-const Time = tw.div``;
+const Time = tw.div`
+text-xs text-blue-500
+`;
 
 const Price = tw.div``;
